@@ -8,7 +8,7 @@ module.exports = {
   entry: './src/main.js',
   output: {
     // 컴파일된 파일 찾을 수 있는 곳
-    path: path.resolve(__dirname, './static/dist'),
+    path: path.resolve(__dirname, '../static/dist'),
     // publicPath: '/dist/',
     filename: 'bundle.js'
   },

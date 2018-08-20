@@ -7,7 +7,7 @@ from django.views.decorators.csrf import csrf_exempt
 from . import views
 
 urlpatterns = [
-    path(''                                         , TemplateView.as_view(template_name='index.html'), name='index'),
+    path(''                                         , TemplateView.as_view(template_name='frontend/index.html'), name='index'),
     path('api/guestbooks'                           , views.guestbooks, name='guestbooks'),
     path('api/guestbook/create'                     , csrf_exempt(views.create_guestbook), name='create_guestbook'),
     path('api/guestbook/edit/<int:guestbook_id>'    , csrf_exempt(views.edit_guestbook), name='edit_guestbook'),
